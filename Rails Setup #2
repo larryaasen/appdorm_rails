@@ -1,0 +1,24 @@
+1. Install RVM
+$ curl -L get.rvm.io | bash -s stable  (this will take a while)
+
+2. Install Ruby: ruby -v => 1.9.3
+$ rvm reload
+$ rvm install 1.9.3 (this will take a while)
+$ rvm --default use 1.9.3
+
+3. Download RubyGems
+
+4. Goto rubygems folder and run:
+$ ruby setup.rb
+
+5. Or update RubyGems:
+$ sudo gem update --system
+
+6. Install Rails:
+$ sudo gem install rails (optional arg --version 3.2
+$ rails -v => Rails 3.2.x
+
+7. Install AppDorm
+$ git clone https://github.com/larryaasen/appdorm_rails.git
+$ bundle update
+$ rake db:setup
