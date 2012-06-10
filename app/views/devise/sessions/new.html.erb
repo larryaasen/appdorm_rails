@@ -1,0 +1,61 @@
+<div id="content" class="help">
+    <div id="column1" class="dark">
+        <div class="col_footer">
+            <div class="col_header">
+                <div class="col_content" id="DarkLeft">
+                    
+                    <div class="formTitle">Sign In</div>
+                    <div style="margin-bottom: 29px;">
+                      <%= link_to "Not a member? Sign Up here.", new_user_registration_path, :class => "forgotPassword" %>
+                    </div>
+
+<%= form_for(resource, :as => resource_name, :url => session_path(resource_name)) do |f| %>
+   <fieldset class="join">
+
+  <%= f.label :email %>
+  <%= f.email_field :email, :class => 'bigInput' %>
+
+  <%= f.label :password %>
+  <%= f.password_field :password, :class => 'bigInput' %>
+
+  <% if devise_mapping.rememberable? -%>
+    <div><%= f.check_box :remember_me %> <%= f.label :remember_me %></div>
+  <% end -%>
+
+  <br class="clearleft">
+  <%= f.submit "", :class => 'bigButton bigButtonLogin' %>
+  </fieldset>
+<% end %>
+
+<%= render :partial => "devise/shared/links" %>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+<!--    
+            <div id="column2" class="light">
+                <div class="col_footer">
+                    <div class="col_header">
+                        <div class="col_content">
+                            <div id="cta_timetoremember" style="margin-left: 10px;">
+                                <p class="formTitle">Manage Your Builds</p>
+                                <p>
+                                    Organize your Android builds and share them with your team.
+                                </p>
+                                <ul>
+                                    <li>test</li>
+                                </ul>
+                                <%= image_tag("android_logo.gif", :alt => "AppDorm", :width => "375px") %>
+                              </div>
+                            <div class="clearall"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="clearall"></div>
+        </div>
+-->    
+    <div class="clearall"></div>
+</div>
+

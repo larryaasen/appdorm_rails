@@ -1,0 +1,48 @@
+/*
+** Created by Larry Aasen
+** Used for Android specific CSS
+*/
+
+body {
+	font-family: Calibri,Helvetica;
+  font-size: 14px;
+	color: #555;
+	background: white;
+	width: 100%;
+	margin-top: 0;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+header {
+  font-size: 14px;
+}
+
+header nav {
+  font-size: 10px;
+	line-height: 14px;
+}
+
+.home-intro-heading {
+	font-size: 18px;
+}
+
+.home-intro-body {
+	font-size: 14px;
+}
+
+.install {
+  font-size: 12px;	
+	line-height: 14px;
+}
+
+footer {
+	text-align: center;
+  margin: 0;
+	width: 100%;
+}
+
+.footer-copyright {
+	font-size: 10px;
+	width: 100%;
+}

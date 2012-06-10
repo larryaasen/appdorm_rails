@@ -1,0 +1,49 @@
+/*
+** Created by Larry Aasen
+*/
+
+header {
+	background-color: white;
+  margin: 0;
+ 	margin-top: 10px;
+  height: 64px;
+  
+  font-family: Calibri,Helvetica;
+  font-size: 44px;
+  color: rgb(125, 146, 161);
+}
+
+header img {
+  vertical-align: middle;
+  margin: 0px 0px 5px 2px;
+}
+
+header nav {
+  text-align: right;
+	float: right;
+	line-height: 24px;
+  height: 30px;
+
+  font-size: 16px;
+	padding: 0.4em 0.7em 0.7em 0.7em;
+}
+
+header nav ul {
+	margin: 0;
+	padding: 0;
+}
+
+header nav ul li {
+	padding: 0px 0px 0px 0px;
+	list-style-type: none;
+	display: inline-block;
+}
+
+header nav ul li a {
+	color: rgb(125, 146, 161);
+	text-decoration: none;
+}
+
+header nav ul li a:hover {
+	text-decoration: underline;
+}

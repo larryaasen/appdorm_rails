@@ -1,0 +1,154 @@
+/*
+** Created by Larry Aasen
+*/
+
+footer {
+	margin-top: 30px;
+	margin-bottom: 30px;
+	text-align: center;
+}
+
+footer nav {
+  font-size: 16px;
+  color: black;
+}
+
+footer nav ul {
+	margin: 0;
+	padding: 0;
+}
+
+footer nav ul li {
+	list-style-type: none;
+	display: inline-block;
+}
+
+footer nav ul li a:hover {
+	text-decoration: underline;
+}
+
+.footer-copyright {
+	font-size: 12px;
+	text-align: center;
+}
+
+.footerlinks {
+    float:left;
+    width:75%;
+}
+
+.longbucket, .longbucket_top, .longbucket_bottom, .longbucket.line .longbucket_top {
+    width:100%;
+}
+.longbucket {
+    background:url(layout/bottomnav_stretcher.gif) top left repeat-y;
+    margin-bottom:20px;
+    clear:left;
+}
+.longbucket_top {
+    background:url(layout/bottomnav_top.gif) top left no-repeat;
+}
+.longbucket.line .longbucket_top {
+    background:url(layout/bottomnav_top.gif) top left no-repeat;
+}
+.longbucket_bottom {
+    background:url(layout/bottomnav_bottom.gif) bottom left no-repeat;
+    padding-bottom:12px;
+}
+
+.longbucket #col_1, .longbucket #col_2 {
+    float:left;
+    width:420px;
+    padding-right:30px;
+}
+.longbucket #col_2.no_title {
+    padding-top:14px;
+}
+.longbucket #col_1 p, .longbucket #col_2 p {
+    color:#666;
+    line-height:1.5em;
+    font-size:12px;
+    margin-bottom:15px;
+}
+
+
+.longbucket.line .bottomnav {
+    margin:0px;
+    padding:9px 0px 0px 47px;
+}
+* html .longbucket.line .bottomnav {
+    padding:8px 0px 0px 47px;
+}
+.longbucket .bottomnav {
+    padding:18px 0px 9px 47px;
+}
+.bottomnav ul {
+    list-style-type:none;
+    margin:0px;
+    padding:0px;
+    float:left;
+    width:230px;
+    font-size:12px;
+}
+#wrapper .longbucket.line .bottomnav ul li {
+    font-size:12px;
+}
+.bottomnav ul li {
+    padding:0px;
+    clear:left;
+    line-height:1.5em; 
+    background-image:none;
+}
+#btn_bottomgetstarted {
+    background:url(../images/nav/btn_bottomgetstarted.gif) top left no-repeat;
+    width:82px;
+}
+.bottomnav li.btn_bottomgetstarted {
+    background:url(../images/nav/btn_bottomgetstarted.gif) top left no-repeat;
+    margin-top:0px;
+}
+.bottomnav a#btn_bottomgetstarted:hover {
+    background-position:100% -20px;
+    margin-top:0px;
+    z-index:50;
+}
+#btn_support {
+    background:url(../images/nav/btn_support.gif) top left no-repeat;
+    width:55px;
+}
+.bottomnav li.btn_support {
+    background:url(../images/nav/btn_support.gif) top left no-repeat;
+    margin-top:0px;
+    margin-right:0px;
+}
+.bottomnav a#btn_support:hover {
+    background-position:100% -20px;
+    margin-top:0px;
+    z-index:50;
+}
+#btn_company {
+    background:url(../images/nav/btn_company.gif) top left no-repeat;
+    width:65px;
+}
+.bottomnav li.btn_company {
+    background:url(../images/nav/btn_company.gif) top left no-repeat;
+    margin-top:0px;
+    margin-right:0px;
+}
+.bottomnav a#btn_company:hover {
+    background-position:100% -20px;
+    margin-top:0px;
+    z-index:50;
+}
+#btn_support, #btn_company, #btn_bottomgetstarted {
+    display:block;
+    float:left;
+    height:20px;
+    margin-bottom:12px;
+}
+#btn_support:hover, #btn_company:hover, #btn_bottomgetstarted:hover {
+    background-position:100% -20px;
+}
+#btn_support span, #btn_company span, #btn_bottomgetstarted span {
+    display:none;
+}

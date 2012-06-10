@@ -1,0 +1,16 @@
+Application: <%= @build.apk_app_name %> <%= @build.apk_version_number %>
+
+Size: <%= @build.fileSizeAbbreviated %>
+
+What's new in this build?
+
+<%= @build.release_note %>
+
+Install:
+<%= @full_path %>
+
+Organization: <%= @organization.name %>
+
+To install this build, open this email on your Android device.
+
+Powered by AppDorm (<%=RailsAppdorm::Application.config.user_mailer_domain%>)

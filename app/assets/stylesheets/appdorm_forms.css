@@ -1,0 +1,387 @@
+.formTitle {
+	color:#3B6E8F;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 26px;
+}
+
+form, legend, input {
+	margin:0;
+	padding:0;
+} /* reset style */
+
+
+form, fieldset {
+	margin: 0;
+	padding: 0;
+}
+fieldset {
+	border:none;
+}
+legend {
+	padding: 0;
+	color: #000;
+}
+input, textarea, select {
+	margin: 0;
+	padding: 2px 0px 0px 4px;
+	font-size: 11px;
+	font-family: inherit;
+	border:0 none;
+	color:#242424;
+}
+.buttonlayout {
+	float:right;
+	padding-right:70px;
+}
+.buttonlayout input.gray {
+	margin-top:0px;
+}
+/*____________________________________________________________
+
+TRIAL ACCOUNT
+____________________________________________________________*/
+fieldset {
+	margin:20px 0px;
+	font-size:12px;
+}
+fieldset legend {
+	color:#3B6E8F;
+	margin:0 0 1.5em 0px;
+	padding:0px;
+}
+fieldset label {
+	display:inline-block;
+	padding-bottom:3px;
+	width:440px;
+	vertical-align:top;
+	padding-left:6px;
+}
+
+fieldset.fb label {
+	width:145px;
+}
+
+
+
+fieldset input, fieldset select, fieldset textarea {
+	width:317px;
+	height:20px;
+	margin-bottom:15px;
+	display:inline;
+	background-color:#EEEFF1;
+}
+fieldset.hiw input {
+	margin:0px;
+	background-color:#fff;
+	width:20px;
+	padding:0px;
+	color:#333;
+}
+
+fieldset.hiw label {
+	width:265px;
+	font-size:12px;
+	padding:0px;
+	margin:0px;
+}
+* html fieldset.hiw label {width:260px;}
+
+#how_col1 #addSection_small input.blue, #how_col2 input.blue {clear:both;position:absolute;bottom:10px;left:22px;z-index:999;}
+
+fieldset.getstarted input, fieldset.getstarted select {
+	width:317px;
+	height:18px;
+	margin-bottom:15px;
+	display:block;
+	background-color:#fff;
+}
+fieldset.getstarted select {
+	height:20px;
+}
+fieldset.getstarted textarea {
+	background-color:#fff;
+}
+fieldset textarea {
+	height:100px;
+}
+fieldset.getstarted label {
+	display:block;
+	padding-bottom:3px;
+	padding-left:6px;
+	width:317px;
+}
+fieldset.getstarted label small {
+	font-size:10px;
+}
+fieldset.getstarted label.disclaimer {
+	margin-left:20px;
+	width:295px;
+}
+fieldset input.gray {
+	background-color:#9EAAB6;
+	text-align:center;
+	padding:3px 4px;
+	font-size:12px;
+	color:#fff;
+	margin:20px 0px;
+	cursor:pointer;
+	border:none;
+	height:22px;
+	width:80px;
+}
+fieldset.getstarted input.gray {
+	clear:both;
+}
+fieldset input.gray:hover {
+	color:#E0E4E8;
+}
+
+input.blue, #column2 input.blue, .blue {
+	width:135px;
+	height:35px;
+	padding:0px;
+	background:url(../../images/layout/btn_blue.gif) top left no-repeat;
+	display:block;
+	cursor:pointer;
+	color:#fff;
+	text-align:center;
+	margin:8px auto;
+	cursor:pointer;
+	font-size:14px;
+	text-decoration:none;
+}
+.blue {padding:7px 0px 0px 0px;}
+#column2 input.blue:hover, input.blue:hover, a.blue:hover {
+	color:#D2E9F7;
+}
+fieldset.getstarted input.chk {
+	float:left;
+	border:none;
+	width:14px;
+	height:13px;
+}
+
+
+/*____________________________________________________________
+
+MEMBER LOG IN FORM
+____________________________________________________________*/
+
+fieldset.memberLogIn { margin-top: 8px; margin-bottom: 0;}
+
+fieldset.memberLogIn input#name,
+fieldset.memberLogIn input#password {
+	width:317px;
+	height:30px;
+	margin-bottom:15px;
+	display:block;
+	background-color:#fff;
+	font-size:20px;
+	color:#4C4C4C;
+	padding-top:5px;
+}
+
+fieldset.memberLogIn label#name,
+fieldset.memberLogIn label#password {
+	display:block;
+	padding-bottom:3px;
+	padding-left:2px;
+	width:317px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 17px;
+	color: #4C4C4C;
+}
+
+fieldset.memberLogIn input#submit { margin-top: 0;}
+
+a.forgotPassword,
+a.forgotPassword:link,
+a.forgotPassword:visited {
+	margin: 1px 0 0 0;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	font-weight: bold;
+	color: #3B6E8F;
+}
+
+a.forgotPassword:hover,
+a.forgotPassword:active,
+a.forgotPassword:focus {
+	color: #79BDE8;
+}
+
+/*____________________________________________________________
+
+JOIN FORM
+____________________________________________________________*/
+
+.joinHeadline { font-size: 12px; margin-top: 7px; color: #4C4C4C; }
+
+fieldset.join { margin-top: 8px; margin-bottom: 0;}
+
+.bigInput {
+    display:block;
+    width:317px;
+    height:30px;
+    margin-bottom:17px;
+    font-size: 20px;
+    background-color:#fff;
+    border: solid 1px #C8D1D9;
+    color:#4C4C4C;
+    padding-top:5px;
+}
+
+.autoSize {
+    width: auto;
+    height: auto;
+}
+
+.releaseNotesInput {
+    font-size: 12px;
+}
+
+/*
+fieldset.join input#name,
+fieldset.join input#firstName,
+fieldset.join input#lastName,
+fieldset.join input#email,
+fieldset.join input#password,
+fieldset.join input#confirmPassword {
+	display:block;
+	width:317px;
+	height:30px;
+	margin-bottom:17px;
+	font-size: 20px;
+	background-color:#fff;
+	border: solid 1px #C8D1D9;
+	color:#4C4C4C;
+	padding-top:5px;
+}
+*/
+
+.legalCheckBox {
+	float: left;
+    width:14px;
+    height:14px;
+    padding: 0;
+    margin: 0 6px 15px 0;;
+    background-color:#fff;
+    border: solid 1px #C8D1D9;
+	}
+
+
+fieldset.join input#offers { 
+	float: left;
+    width:10px;
+	height:10px;
+	padding: 0;
+	margin: 0 6px 15px 0;;
+	background-color:#fff;
+	border: solid 1px #C8D1D9;}
+
+fieldset.join label,
+fieldset.join label#firstName,
+fieldset.join label#lastName,
+fieldset.join label#emailAddy,
+fieldset.join label#pass,
+fieldset.join label#passConf,
+fieldset.join label#customerZipCode,
+fieldset.join label#channelPartnerLocationId,
+fieldset.join label#howHear {
+	display:block;
+	padding-bottom:3px;
+	padding-left:2px;
+	width:440px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	color: #4C4C4C;
+}
+
+fieldset.join select {
+	display:block;
+	width:317px;
+	height:30px;
+	margin-bottom:15px;
+	font-size: 20px;
+	background-color:#fff;
+	border: solid 1px #C8D1D9;
+	color:#4C4C4C;
+	padding-top:5px;
+}
+
+fieldset.join label#terms,
+fieldset.join label#offers {
+   	float:left;
+	padding-bottom:3px;
+	padding-left:2px;
+	width:350px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #4C4C4C;
+	}
+	
+fieldset.join label#sendMeEmailsLabel {
+	float:left;
+	padding-bottom:3px;
+	padding-left:2px;
+	width:390px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #4C4C4C;
+	}
+
+fieldset.join input#submit { margin-top: 0;}
+
+a.forgotPassword,
+a.forgotPassword:link,
+a.forgotPassword:visited {
+	margin: 1px 0 0 0;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	font-weight: bold;
+	color: #3B6E8F;
+}
+
+a.forgotPassword:hover,
+a.forgotPassword:active,
+a.forgotPassword:focus {
+	color: #79BDE8;
+}
+
+/*____________________________________________________________
+Error Form Handling
+____________________________________________________________*/
+
+.formError {
+color:#990000;
+font-size:12px;
+margin:0px;
+padding:0px;
+}
+
+.emailPassword {
+font-size:14px;
+color:#4C4C4C;
+padding:8px 0px 0px 0px;
+margin:0px;
+width:300px;
+}
+
+/*____________________________________________________________
+
+CONTACT US FORM
+____________________________________________________________*/
+
+
+#formNews fieldset label {
+	padding-left:0px;
+}
+
+
+.skinnybucket_content {height:435px;}/* set the heights of the Get Started Buckets */
+
+
+
+a.topnav_activebtn#btn_takeatour, a.topnav_activebtn#btn_getstarted, a.topnav_activebtn#btn_contactus  {
+	background-position:100% -42px;
+}

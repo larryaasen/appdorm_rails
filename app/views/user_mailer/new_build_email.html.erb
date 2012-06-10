@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+  </head>
+  <body>
+    <div style="font: 18px/22px Helvetica, Arial, sans-serif; color: #000000; display: block; padding: 0px 10px 5px 10px;">
+      <p><b>Application:</b> <%= @build.apk_app_name %> <%= @build.apk_version_number %></p>
+    
+      <p><b>Size:</b> <%= @build.fileSizeAbbreviated %></p>
+    
+      <p><b>What's new in this build?</b></p>
+      <%= simple_format(@build.release_note) %>
+    
+      <p>
+      <%= link_to 'Install', @full_path %>
+      </p>
+    
+      <p><b>Organization:</b> <%= @organization.name %></p>
+      
+      <p>To install this build, open this email on your Android device.</p>
+      
+      <p>Powered by AppDorm (<%=RailsAppdorm::Application.config.user_mailer_domain%>)</p>
+    </div>
+    
+  </body>
+</html>

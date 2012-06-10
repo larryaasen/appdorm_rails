@@ -1,0 +1,101 @@
+/*
+** Created by Larry Aasen
+*/
+
+body {
+	font-family: Calibri,Helvetica;
+  font-size: 14px;
+	color: #555;
+	background: white;
+	width: 970px;		
+  margin: 0 auto;
+  margin-top: 0;
+}
+
+.home-intro-heading {
+	font-size: 28px;
+	text-align: center;
+	margin-top: 20px;
+	margin-bottom: 30px;
+}
+
+.home-intro-body {
+	font-size: 24px;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+.field_with_errors {
+	margin-top: 10px;
+	padding: 2px;
+	background-color: red;
+	display: table;
+}
+
+.field_with_errors label {
+	color: #fff;
+}
+
+.actions {
+  color: #900;
+  font-size: 150%;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.build {
+	display: block;
+}
+
+.build .build-app-name {
+	display: block;
+	font-weight: bold;
+  font-size: 24px;
+  height: 70px;
+	vertical-align: middle;
+	line-height: 64px;
+}
+
+.build .build-img {
+  height: 64px;
+	display: block;
+  float: left;
+}
+
+#error_explanation {
+	width: 400px;
+	border: 2px solid red;
+	padding: 7px;
+	padding-bottom: 12px;
+	margin-bottom: 20px;
+	background-color: #f0f0f0;
+}
+
+#error_explanation h2 {
+	text-align: left;
+	font-weight: bold;
+	padding: 7px;
+	font-size: 12px;
+	margin: -7px;
+	background-color: #c00;
+	color: #fff;
+}
+
+#error_explanation p {
+	color: #333;
+	margin-bottom: 0;
+	padding: 5px;
+}
+
+#error_explanation ul li {
+	font-size: 12px;
+	list-style: square;
+}
+
+.flash_notice {
+  background-color: #ffa;
+  border: thin solid #ccc;
+	margin-top: 0px;
+	padding: 5px;
+	text-align: center;
+}

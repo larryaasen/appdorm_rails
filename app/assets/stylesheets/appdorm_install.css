@@ -1,0 +1,27 @@
+/*
+** Created by Larry Aasen
+*/
+
+header {
+  height: 32px;
+  width: 400px;
+  font-size: 24px;
+}
+
+.install {
+  height: 90px;
+}
+
+.install .build-app-name {
+	display: block;
+	font-weight: bold;
+  font-size: 14px;
+  XXheight: 32px;
+}
+
+.install .build-img {
+  height: 64px;
+  float: left;
+  margin: 0px 5px 5px 5px;
+}
+

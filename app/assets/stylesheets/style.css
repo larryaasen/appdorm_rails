@@ -1,0 +1,64 @@
+.col05w { width: 970px; }
+
+
+.col05bg { background: transparent url(../../images/help/col05bg.jpg) repeat-y center; }
+.col05footer { background: transparent url(../../images/help/col05footer.jpg) no-repeat scroll bottom center; height: 20px; }
+.col05tab { background: transparent url(../../images/help/col05tab.jpg) no-repeat scroll top center; height: 20px; }
+
+#contentTwo {
+font-size:11px;
+line-height:15px;
+margin:0;
+padding:0 20px;
+}
+#questionsPara {
+color:#333333;
+font-size:13px !important;
+padding:0 12px;
+}
+
+#content h5 {
+color:#3B6E8F;
+font-size:12px;
+font-weight:bold;
+line-height:15px;
+margin:0;
+padding:0;
+}
+
+
+#guidedtour {font-size:11px;
+line-height:15px;
+margin:0;
+padding:0 20px;}
+
+
+#guidedtour p {
+font-size:11px;
+line-height:15px;
+margin:0 0 15px;
+padding:0;
+}
+
+#guidedtour a:hover {
+color:#79BDE8;
+}
+#guidedtour a {
+color:#3B6E8F;
+text-decoration:underline;
+}
+
+.SpryHiddenRegion { visibility: hidden; }
+
+.divider {
+	height: 15px;
+	border-bottom: 1px solid #d9dde2;
+	margin-bottom: 14px;
+	clear: both;
+}
+
+#homeFooterNote {
+padding:10px;
+text-align:right;
+}
+#contentTwoListWrapper p {font-size:12px;padding:0px 20px;}

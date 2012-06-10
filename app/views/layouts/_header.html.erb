@@ -1,0 +1,43 @@
+<header>
+	<% logo = image_tag("Android_Market.png", :alt => "AppDorm", :width => "64px") %><%= link_to logo, root_path %> AppDorm
+
+  <nav>
+    <ul>
+			<% if user_signed_in? %>
+				<li>
+					Hello, 
+					<% if current_user.name and !current_user.name.empty? %>
+						<%= current_user.name %>.
+					<% else %>
+						<%= current_user.email %>.
+					<% end %>
+				</li>
+				<li>
+					<%= link_to "Not you?", destroy_user_session_path, :method => :delete %>
+				</li>
+			<% else %>
+				<li>
+					<%= link_to "Sign in", new_user_session_path %>
+				</li>
+				<li>
+					<%= link_to "/ Sign up", new_user_registration_path %>
+				</li>
+			<% end %>
+		</ul>
+    <ul>
+			<% if user_signed_in? %>
+				<% if current_user and current_user.current_organization_id > 0 %>
+					<li><% name = "Organization: " + Organization.find(current_user.current_organization_id).name %><%= link_to name, organizations_path %> | </li>
+				<% else %>
+					<li><%= link_to 'Organizations', organizations_path %> | </li>
+				<% end %>
+				<% if is_mobile_device? %>
+					<li><%= link_to 'Install', install_path %></li>
+				<% else %>
+					<li><%= link_to 'Upload', new_build_path %> | </li>
+					<li><%= link_to 'Builds', builds_path %></li>
+				<% end %>
+			<% end %>
+    </ul>
+  </nav>
+</header>	

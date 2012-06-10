@@ -1,0 +1,13 @@
+<% @builds.each do |build| %>
+  <div class="install">
+    <div class="build-img"><% logo = image_tag("def-app-icon.png", :alt => "#{build.apk_app_name}", :width => "64px", :height => "64px") %><%= link_to logo, build.apk_local_path %></div>
+    <span class="build-app-name"><%= build.apk_app_name %></span>
+    
+    Version: <b><%= build.apk_version_number %></b>
+    
+    Released: <b><%= build.date_uploaded.localtime.strftime("%m/%d/%Y") %></b><br />
+    Size: <b><%= build.fileSizeAbbreviated %></b><!-- Built for: <b>Android 1.6+</b>--><br/>
+    <%= link_to "Install", build.apk_local_path %><br />
+    <br />
+  </div>
+<% end %>

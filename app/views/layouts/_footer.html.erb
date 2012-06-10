@@ -1,0 +1,37 @@
+<footer>
+
+<% if !is_mobile_device? %>
+
+  <div class="longbucket line">
+        <div class="longbucket_bottom">
+            <div class="longbucket_top">
+                <div class="bottomnav">
+
+          <ul>
+            <li><a href="whatwedo.html/">What We Do</a></li>
+            <li><a href="getstarted/">Get Started</a></li>
+          </ul>
+          <ul>
+            <li><%= link_to "Contact Support", contact_path %></li>
+            <li><a href="help/">Online Help</a></li>
+            <li><a href="support/faq.htm">Questions</a></li>
+          </ul>
+          <ul>
+            <li><a href="legal/terms.htm">Terms &amp; Conditions</a></li>
+            <li><a href="legal/privacy.htm">Privacy Policy</a></li>
+          </ul>
+          <ul>
+            <li><%= link_to "About AppDorm", about_path %></li>
+          </ul>
+                
+            <div class="clearleft"></div>
+                </div>
+            </div>
+        </div>
+
+  </div>  
+<% end %>
+
+  <div class="footer-copyright"><%=raw t 'footer.copyright', :year => Time.now.year %></div>
+  
+</footer>

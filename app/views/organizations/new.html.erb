@@ -1,0 +1,27 @@
+<div id="content" class="help">
+    <div id="column1" class="dark">
+        <div class="col_footer">
+            <div class="col_header">
+                <div class="col_content" id="DarkLeft">
+                    
+                    <div class="formTitle">New organization</div>
+                    <div style="margin-bottom: 29px;">
+                    </div>
+
+<%= form_for :organization, :url => organizations_path do |f| %>
+   <fieldset class="join">
+
+  <%= f.label :name, :id => 'name' %>
+  <%= f.text_field :name, :class => 'bigInput' %>
+
+  <%= f.submit "Create", :class => 'bigButtonSubmit' %>
+  </fieldset>
+<% end %>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="clearall"></div>
+</div>

@@ -1,0 +1,69 @@
+<div id="content" class="help">
+    <div id="column1" class="dark">
+        <div class="col_footer">
+            <div class="col_header">
+                <div class="col_content" id="DarkLeft">
+                    
+                    <div class="formTitle">Create an Account</div>
+                    
+                    <div style="margin-bottom: 29px;">
+                      <%= link_to "Already a member? Sign In here.", new_user_session_path, :class => "forgotPassword" %>
+                    </div>
+
+
+<%= form_for(resource, :as => resource_name, :url => registration_path(resource_name)) do |f| %>
+  <%= devise_error_messages! %>
+
+   <fieldset class="join">
+
+  <%= f.label :name, :id => 'name' %>
+  <%= f.text_field :name, :class => 'bigInput' %>
+
+  <%= f.label :email %>
+  <%= f.email_field :email, :class => 'bigInput' %>
+
+  <%= f.label :password %>
+  <%= f.password_field :password, :class => 'bigInput' %>
+
+  <%= f.label :password_confirmation, 'Confirm Password' %>
+  <%= f.password_field :password_confirmation, :class => 'bigInput' %>
+
+  <br class="clearleft">
+  <%= f.submit "", :class => 'bigButton bigButtonCreateAccount2' %>
+
+
+
+                        
+              
+  </fieldset>
+   
+
+
+<% end %>
+
+<p><br /><br /><%= render :partial => "devise/shared/links" %></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+<!--    
+		    <div id="column2" class="light">
+                <div class="col_footer">
+		            <div class="col_header">
+		                <div class="col_content" id="RightLight">
+                      <p>
+                          Join Today!
+                      </p>
+                      <p>
+                          Join Today!
+                      </p>
+                      Join Today!
+		                </div>
+		            </div>
+		        </div>
+		    </div>
+-->    
+    <div class="clearall"></div>
+</div>
+

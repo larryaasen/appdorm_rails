@@ -1,0 +1,30 @@
+<%= form_for(@build, :html => {:multipart => true}) do |f| %>
+   <fieldset class="join">
+
+    <% if @build.errors.any? %>
+      <div id="error_explanation">
+        <h2><%= pluralize(@build.errors.count, "error") %> prohibited this build from being saved:</h2>
+  
+        <ul>
+        <% @build.errors.full_messages.each do |msg| %>
+          <li><%= msg %></li>
+        <% end %>
+        </ul>
+      </div>
+    <% end %>
+  
+    <div class="field">
+      <%= f.label "Build file (APK)" %>
+      <%= f.file_field :apk_filename %>
+      <p>
+      <%= f.label "Release notes (optional)" %> <br />
+      <%= f.text_area :release_note, :rows => 10, :cols => 80, :class => 'bigInput autoSize releaseNotesInput' %>
+      </p>
+      
+    </div>
+    <div>
+      <%= f.submit "Upload", :class => "bigButtonSubmit" %>
+    </div>
+  
+  </fieldset>
+<% end %>

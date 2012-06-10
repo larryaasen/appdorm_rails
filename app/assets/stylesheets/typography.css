@@ -1,0 +1,132 @@
+/*  
+Version: 1.0
+Author: TargetScope Inc.
+Author URI: http://www.targetscope.com
+*/
+
+h1, h2, h3, h4, h5, h6 {
+	margin:0;
+	padding:0;
+}
+
+body {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:13px;
+	color:#575757;	/* was 4c4c4c - this matches layout look better */
+}
+/*____________________________________________________________
+Basic text styles
+____________________________________________________________*/
+p {
+	line-height:1.5em;
+	font-size:13px;
+	margin:0px 0px 25px 0px;
+	padding:0;
+}
+p.recent {
+	margin:4px 0 12px;
+}
+p.caption {
+	margin:9px 0 12px;
+}
+p.nomargin {margin:0px;}
+a.captionlink {
+	font-size:11px;
+}
+h1 {
+} /* Using images for h1 tags -can't match Avenir text */
+img.title {
+	margin-bottom:15px;
+}
+h1 {
+	font-size:17px;
+	color:#3B6E8F;
+	font-weight:normal;
+	margin-bottom:15px;
+}
+
+h2, legend, .infobucket h2, #copy h2 {
+	font-size:13px;
+	margin-bottom:.25em;
+	padding:0;
+	color:#3B6E8F;
+	font-weight:bold;
+	font-family:Arial, Helvetica, sans-serif;
+}
+h3 {
+	font-size:13px;
+	margin-bottom:.25em;
+	padding:0;
+	color:#3B6E8F;
+	font-weight:normal;
+}
+h4 {
+	font-size:18px;
+	margin:0;
+	padding:0;
+	color:#000000;
+}
+h5 {
+	font-size:16px;
+	margin:0;
+	padding:0;
+	color:#000000;
+}
+h6 {
+	font-size:14px;
+	margin:0;
+	padding:0;
+	color:#000000;
+}
+.smallType {
+font-size:10px;
+}
+
+/*____________________________________________________________
+special text colors - seems like we always need to be able to 
+set some text to a certain color.
+____________________________________________________________*/
+.blue_text {
+	color:#3B6E8F;
+}
+/*____________________________________________________________
+Header styles
+____________________________________________________________*/
+#ExtraNav a {
+}
+#ExtraNav a:hover {
+}
+/*____________________________________________________________
+Footer styles
+____________________________________________________________*/
+#Footer p {
+}
+#Footer a {
+}
+#Footer a:hover {
+}
+/*____________________________________________________________
+some home page specific styles
+____________________________________________________________*/
+#HomePage {
+	font-size:12px;
+}
+#HomePage p {
+	line-height:100%;
+}
+/*____________________________________________________________
+base link styles
+____________________________________________________________*/
+a, #copy .infobucket a, #wrapper .bottomnav a {
+	color:#80909F;
+	text-decoration:none;
+}
+a:visited {
+/*color:#CB4402;*/
+}
+a:hover, .iconDocLink a:hover, #copy .infobucket a:hover, #wrapper .bottomnav a:hover {
+	text-decoration:none;
+	color:#79BDE8;
+}
+a:active {
+}

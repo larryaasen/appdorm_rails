@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+	  <title><%= title %></title>
+	  <%= csrf_meta_tags %>
+		<%= render 'layouts/stylesheets' %>
+	  <%= javascript_include_tag "application" %>
+
+    <meta name="HandheldFriendly" content="true" />
+    <meta name="viewport" content="width=device-width, height=device-height, user-scalable=yes" />
+    <meta http-equiv="Cache-Control" content="no-cache"/>
+  </head>
+	
+  <body>
+	  <%= render 'layouts/install_header' if params['controller'] == "builds" and params['action'] == "install" %>
+	  <%= render 'layouts/header' unless params['controller'] == "builds" and params['action'] == "install" %>
+		
+	  <section>
+			<br />
+			
+			<section class="round">
+				<% flash.each do |key, value| %>
+					<div class="flash_<%= key %>"><%= value %></div>
+				<% end %>
+      </section>
+				<%= yield %>
+		
+	  </section>
+		  
+		<%= render 'layouts/footer' %>
+		
+		<!--<%= debug(params) if Rails.env.development? %> -->
+		
+	</body>
+	
+</html>
