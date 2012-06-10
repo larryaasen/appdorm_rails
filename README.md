@@ -1,84 +1,84 @@
-h1. The AppDorm project - a private market for Android apps
+# The AppDorm project - a private market for Android apps
 
 This project is designed to produce a website that can be used to setup private Android app markets quickly and easily. The code is open source and can be used by small companies, large companies, government agencies, and private individuals.
 
-h2. Help Wanted
+## Help Wanted
 
 The code for AppDorm is written by volunteers and we need your help.
 
-Architect - We need an experience architect to design the website software for AppDorm. You will have the chance to decide which technologies are used to build this website. Do you want to use Ruby on Rails, PHP, MySQL, PostgreSQL, MongoDB, Java? You will decide. Please contact the admin with your details.
+Architect - We need an experience architect to design the website software for AppDorm. Please contact the admin with your details.
 
-Developer - We need developers who can implement the features of this website. You will work closely with the Architect to build core features and the front end. Please contact the admin with your details.
+Developer - We need Ruby on Rails developers who can implement the features of this website. You will work closely with the Architect to build core features and the front end. Please contact the admin with your details.
 
 Designer - We need an experience website designer who can quickly design a theme for this website. You will work closely with the Architect to create a design that is appealing and user friendly. Please contact the admin with your details.
 
-h2. Contributors
+## Contributors
 
 This project wouldn't exist without all of our awesome users and contributors.
 
-* "View our growing list of contributors":https://github.com/larryaasen/AppDorm/contributors
+* [View our growing list of contributors](https://github.com/larryaasen/appdorm_rails/contributors)
 
 Thank you so much!
 
 
-== AppDorm Rails Application
+# AppDorm Rails Application Notes
 
-Production: The production environment is configured for Heroku, host: radiant-lightning-7681
+NoteProduction: The production environment is configured for Heroku, host: radiant-lightning-7681
 
-== Layers
+## Layers
 
-|-- Build Architecture
-|
-|-- view: app/views/builds/show.html.erb
-|
-|-- controller: app/controllers/builds_controller.rb
-|
-|-- model:    app/models/build.rb
-|
-|-- database: db/schema.rb
-|
+    |-- Build Architecture
+    |
+    |-- view: app/views/builds/show.html.erb
+    |
+    |-- controller: app/controllers/builds_controller.rb
+    |
+    |-- model:    app/models/build.rb
+    |
+    |-- database: db/schema.rb
+    |
 
-== Description of Contents
+## Description of Contents
 
 The default directory structure of a generated Ruby on Rails application:
 
-  |-- app
-  |   |-- assets
-  |       |-- images
-  |       |-- javascripts
-  |       `-- stylesheets
-  |   |-- controllers
-  |   |-- helpers
-  |   |-- mailers
-  |   |-- models
-  |   `-- views
-  |       `-- layouts
-  |-- config
-  |   |-- environments
-  |   |-- initializers
-  |   `-- locales
-  |-- db
-  |-- doc
-  |-- lib
-  |   `-- tasks
-  |-- log
-  |-- public
-  |-- script
-  |-- test
-  |   |-- fixtures
-  |   |-- functional
-  |   |-- integration
-  |   |-- performance
-  |   `-- unit
-  |-- tmp
-  |   |-- cache
-  |   |-- pids
-  |   |-- sessions
-  |   `-- sockets
-  `-- vendor
-      |-- assets
-          `-- stylesheets
-      `-- plugins
+    |-- app
+    |   |-- assets
+    |       |-- images
+    |       |-- javascripts
+    |       `-- stylesheets
+    |   |-- controllers
+    |   |-- helpers
+    |   |-- mailers
+    |   |-- models
+    |   `-- views
+    |       `-- layouts
+    |-- config
+    |   |-- environments
+    |   |-- initializers
+    |   `-- locales
+    |-- db
+    |-- doc
+    |-- lib
+    |   `-- tasks
+    |-- log
+    |-- public
+    |-- script
+    |-- test
+    |   |-- fixtures
+    |   |-- functional
+    |   |-- integration
+    |   |-- performance
+    |   `-- unit
+    |-- tmp
+    |   |-- cache
+    |   |-- pids
+    |   |-- sessions
+    |   `-- sockets
+    `-- vendor
+        |-- assets
+            `-- stylesheets
+        `-- plugins
 
 app
   Holds all the code that's specific to this particular application.
